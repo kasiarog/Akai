@@ -1,0 +1,93 @@
+<!-- 
+Jestem świadoma, że wiele rzeczy powinno być zrobionych dużo lepiej i efektywniej, jednak ja się dopiero uczę, a bycie w kole bardzo by mi w tym pomogło :)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<section id="task-frontend">
+
+		<a href="https://akai.org.pl/" target="blank" title="Przejdź do strony AKAI"><img src="logo.svg" id="logo"/></a>
+		<span class="basic-title"><b>Dołącz do nas!</b></span>
+		<p>Wypełnij formularz rekrutacyjny AKAI</p>
+		
+
+		<form method="post" id="form" onsubmit="validate(event)">
+
+			<div id="box1">
+			
+				<div class="rubric1">
+					<label for="first-name">Imię</label>
+					<input type="text" id="first-name" name="first-name" title="Wpisz swoje imię"/>
+					<div id="error1"></div>
+				</div>
+
+				<div class="rubric1">
+					<label for="last-name">Nazwisko</label>
+					<input type="text" id="last-name" name="last-name" title="Wpisz swoje nazwisko"/>
+					<div id="error2"></div>
+				</div>
+
+				<div class="rubric1">
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" title="Podaj adres e-mail"/>
+					<div id="error3"></div>
+				</div>
+				
+			</div>
+			
+			<div id="box2">
+				<span>Sekcja</span>
+				
+				<div id="options">
+					<div class="rubric2">
+						<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+						<label for="frontend-checkbox">frontend</label>
+					</div>
+
+					<div class="rubric2">
+						<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+						<label for="backend-checkbox">backend</label>
+					</div>
+					
+					<div class="rubric2">
+						<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+						<label for="mobile-checkbox">mobile</label>
+					</div>
+					
+					<div class="rubric2">
+						<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+						<label for="graphics-checkbox">grafika</label>
+					</div>
+					
+					<div id="error4"></div>
+					
+				
+				</div>
+				
+				<input type="submit" value="Prześlij">
+			</div>			
+			
+			<div id="helper" style="clear:both"></div>
+		</form>
+
+		
+	</section>
+
+	<script type="text/javascript" src="js/validation.js"></script>
+
+
+</body>
+</html>
